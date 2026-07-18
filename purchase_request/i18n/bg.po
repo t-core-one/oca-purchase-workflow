@@ -274,7 +274,7 @@ msgstr "Копирай прогнозната цена в новата поръ�
 #: model_terms:ir.ui.view,arch_db:purchase_request.view_purchase_request_form
 #: model_terms:ir.ui.view,arch_db:purchase_request.view_purchase_request_line_make_purchase_order
 msgid "Create RFQ"
-msgstr "Създадено от"
+msgstr "Създай запитване за оферта"
 
 #. module: purchase_request
 #: model:ir.model.fields,field_description:purchase_request.field_stock_move__created_purchase_request_line_id
@@ -623,7 +623,7 @@ msgstr "Правило за презареждане"
 #. module: purchase_request
 #: model:ir.model.fields,field_description:purchase_request.field_purchase_request_line__description
 msgid "PR Description"
-msgstr "Описание"
+msgstr "Описание на заявката"
 
 #. module: purchase_request
 #: model:ir.model.fields,field_description:purchase_request.field_purchase_request_line__pending_qty_to_receive
