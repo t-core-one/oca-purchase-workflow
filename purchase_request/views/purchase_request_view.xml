@@ -10,7 +10,13 @@
                 <header>
                     <button
                         name="button_draft"
-                        states="to_approve,approved,rejected,in_progress,done"
+                        states="to_approve"
+                        string="Reset"
+                        type="object"
+                    />
+                    <button
+                        name="button_draft"
+                        states="approved,rejected,in_progress,done"
                         string="Reset"
                         type="object"
                         groups="purchase_request.group_purchase_request_manager"

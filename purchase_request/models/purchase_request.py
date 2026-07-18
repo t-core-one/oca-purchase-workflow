@@ -278,6 +278,26 @@ class PurchaseRequest(models.Model):
         return super(PurchaseRequest, self).unlink()
 
     def button_draft(self):
+        # Resetting a request that has already been approved (or moved
+        # further) overrides an approval decision, so restrict it to
+        # managers. Requests still pending approval ("to_approve") are
+        # not yet a decision to override, so any requester may reset
+        # those to edit and resubmit. This must be enforced here, not
+        # only via the view's button "groups" attribute, since that
+        # only hides the button in the UI and does not stop the method
+        # from being called directly (e.g. via RPC or automation).
+        if not self.env.user.has_group(
+            "purchase_request.group_purchase_request_manager"
+        ):
+            not_pending = self.filtered(lambda r: r.state not in ("draft", "to_approve"))
+            if not_pending:
+                raise UserError(
+                    _(
+                        "Only a Purchase Request Manager can reset an "
+                        "already approved request to draft: %s"
+                    )
+                    % ", ".join(not_pending.mapped("name"))
+                )
         self.mapped("line_ids").do_uncancel()
         return self.write({"state": "draft"})
 
