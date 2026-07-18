@@ -1,0 +1,178 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_order_approved
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20250909\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-18 09:13+0000\n"
+"PO-Revision-Date: 2026-07-18 09:13+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: purchase_order_approved
+#: model_terms:ir.ui.view,arch_db:purchase_order_approved.view_purchase_configuration
+msgid ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\" groups=\"base.group_multi_company\"/>"
+msgstr ""
+
+#. module: purchase_order_approved
+#: model_terms:ir.ui.view,arch_db:purchase_order_approved.view_purchase_configuration
+msgid ""
+"Adds an extra state in purchase orders previous to 'Purchase Order' state."
+msgstr "Добавя допълнително състояние в поръчките за покупка преди състоянието „Поръчка за покупка“."
+#. module: purchase_order_approved
+#: model:ir.model.fields,help:purchase_order_approved.field_res_company__purchase_approve_active
+#: model:ir.model.fields,help:purchase_order_approved.field_res_config_settings__purchase_approve_active
+msgid ""
+"Adds an extra state in purchase orders previous to 'Purchase Order'. After "
+"confirming and approving a purchase order it will go to state 'Approved'. In"
+" this state the incoming shipments are not created yet and you still can go "
+"back to draft. You can release the creation of the incoming shipments moving"
+" the purchase order to state 'Purchase Order'."
+msgstr "Добавя допълнително състояние в поръчките за покупка преди „Поръчка за покупка“. След потвърждаване и одобряване поръчката преминава в състояние „Одобрена“. В това състояние входящите доставки още не са създадени и може да се върнете към чернова. Създаването на входящите доставки се освобождава с преминаване на поръчката в състояние „Поръчка за покупка“."
+#. module: purchase_order_approved
+#: model:ir.model.fields.selection,name:purchase_order_approved.selection__res_partner__purchase_requires_second_approval__always
+msgid "Always"
+msgstr "Винаги"
+#. module: purchase_order_approved
+#: model:ir.model.fields.selection,name:purchase_order_approved.selection__purchase_order__state__approved
+msgid "Approved"
+msgstr "Одобрена"
+#. module: purchase_order_approved
+#: model_terms:ir.ui.view,arch_db:purchase_order_approved.view_purchase_order_filter
+msgid "Approved Orders"
+msgstr "Одобрени поръчки"
+#. module: purchase_order_approved
+#: model:ir.model.fields.selection,name:purchase_order_approved.selection__res_partner__purchase_requires_second_approval__based_on_company
+msgid "Based on company policy"
+msgstr "Според фирмената политика"
+#. module: purchase_order_approved
+#: model:ir.model,name:purchase_order_approved.model_res_company
+msgid "Companies"
+msgstr "Фирми"
+
+#. module: purchase_order_approved
+#: model:ir.model.fields,field_description:purchase_order_approved.field_purchase_order__company_id
+msgid "Company"
+msgstr "Компания"
+
+#. module: purchase_order_approved
+#: model:ir.model,name:purchase_order_approved.model_res_config_settings
+msgid "Config Settings"
+msgstr "Настройки"
+
+#. module: purchase_order_approved
+#: model:ir.model,name:purchase_order_approved.model_res_partner
+msgid "Contact"
+msgstr "Контакт"
+
+#. module: purchase_order_approved
+#: model_terms:ir.ui.view,arch_db:purchase_order_approved.purchase_order_form
+msgid "Convert to Purchase Order"
+msgstr "Преобразувай в поръчка за покупка"
+#. module: purchase_order_approved
+#: model:ir.model.fields,field_description:purchase_order_approved.field_purchase_order__currency_id
+msgid "Currency"
+msgstr "Валута"
+
+#. module: purchase_order_approved
+#: model:ir.model.fields,field_description:purchase_order_approved.field_purchase_order__picking_type_id
+msgid "Deliver To"
+msgstr "Достави до"
+
+#. module: purchase_order_approved
+#: model:ir.model.fields,help:purchase_order_approved.field_purchase_order__date_order
+msgid ""
+"Depicts the date within which the Quotation should be confirmed and "
+"converted into a purchase order."
+msgstr "Дата, до която офертата трябва да бъде потвърдена и преобразувана в поръчка за покупка."
+"Показва датата, в рамките на която офертата трябва да бъде потвърдена и "
+"преобразувана в поръчка за покупка."
+
+#. module: purchase_order_approved
+#: model:ir.model.fields,field_description:purchase_order_approved.field_purchase_order__dest_address_id
+msgid "Dropship Address"
+msgstr "Адрес за доставка"
+
+#. module: purchase_order_approved
+#: model:ir.model.fields.selection,name:purchase_order_approved.selection__res_partner__purchase_requires_second_approval__never
+msgid "Never"
+msgstr "Никога"
+#. module: purchase_order_approved
+#: model:ir.model.fields,field_description:purchase_order_approved.field_purchase_order__date_order
+msgid "Order Deadline"
+msgstr "Краен срок на Заявката"
+
+#. module: purchase_order_approved
+#: model:ir.model.fields,field_description:purchase_order_approved.field_purchase_order__order_line
+msgid "Order Lines"
+msgstr "Редове на поръчка"
+
+#. module: purchase_order_approved
+#: model:ir.model,name:purchase_order_approved.model_purchase_order
+msgid "Purchase Order"
+msgstr "Поръчка"
+
+#. module: purchase_order_approved
+#: model:ir.model.fields,field_description:purchase_order_approved.field_res_partner__purchase_requires_second_approval
+#: model:ir.model.fields,field_description:purchase_order_approved.field_res_users__purchase_requires_second_approval
+msgid "Purchase Requires Second Approval"
+msgstr "Покупката изисква второ одобрение"
+#. module: purchase_order_approved
+#: model:ir.model.fields,help:purchase_order_approved.field_purchase_order__dest_address_id
+msgid ""
+"Put an address if you want to deliver directly from the vendor to the "
+"customer. Otherwise, keep empty to deliver to your own company."
+msgstr "Въведете адрес, ако искате доставка директно от доставчика към клиента. В противен случай оставете празно за доставка до вашата собствена компания."
+"Поставете адрес, ако искате да доставяте директно от продавача до клиента. В"
+" противен случай оставете празно, за да ги доставите до собствената си "
+"компания."
+
+#. module: purchase_order_approved
+#: model:ir.model.fields,help:purchase_order_approved.field_purchase_order__origin
+msgid ""
+"Reference of the document that generated this purchase order request (e.g. a"
+" sales order)"
+msgstr "Референция на документа, породил това запитване за покупка (напр. поръчка за продажба)"
+"Препратка към документа, генерирал тази заявка за покупка (напр. поръчка за "
+"продажба)"
+
+#. module: purchase_order_approved
+#: model:ir.model.fields,field_description:purchase_order_approved.field_purchase_order__origin
+msgid "Source Document"
+msgstr "Документ-източник"
+
+#. module: purchase_order_approved
+#: model:ir.model.fields,field_description:purchase_order_approved.field_res_config_settings__purchase_approve_active
+msgid "State 'Approved' in Purchase Orders"
+msgstr "Състояние „Одобрена“ в поръчките за покупка"
+#. module: purchase_order_approved
+#: model:ir.model.fields,field_description:purchase_order_approved.field_purchase_order__state
+msgid "Status"
+msgstr "Състояние"
+
+#. module: purchase_order_approved
+#: model:ir.model.fields,help:purchase_order_approved.field_purchase_order__picking_type_id
+msgid "This will determine operation type of incoming shipment"
+msgstr "Това ще определи вида на операцията на входящата пратка"
+
+#. module: purchase_order_approved
+#: model:ir.model.fields,field_description:purchase_order_approved.field_res_company__purchase_approve_active
+msgid "Use State 'Approved' in Purchase Orders"
+msgstr "Използвай състояние „Одобрена“ в поръчките за покупка"
+#. module: purchase_order_approved
+#: model:ir.model.fields,field_description:purchase_order_approved.field_purchase_order__partner_id
+msgid "Vendor"
+msgstr "Търговец"
+
+#. module: purchase_order_approved
+#: model:ir.model.fields,help:purchase_order_approved.field_purchase_order__partner_id
+msgid "You can find a vendor by its Name, TIN, Email or Internal Reference."
+msgstr "Може да търсиш Доставчик по Име, ЕИК, Имейл или Вътрешна Референция"

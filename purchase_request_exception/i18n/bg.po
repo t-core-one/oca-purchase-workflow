@@ -1,0 +1,145 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_request_exception
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20250909\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-18 09:13+0000\n"
+"PO-Revision-Date: 2026-07-18 09:13+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: purchase_request_exception
+#: model_terms:ir.ui.view,arch_db:purchase_request_exception.view_purchase_request_form
+msgid "<strong>There are exceptions blocking this Purchase Order:</strong>"
+msgstr "<strong>Изключения блокират тази поръчка за покупка:</strong>"
+#. module: purchase_request_exception
+#: model:ir.model.fields,field_description:purchase_request_exception.field_exception_rule__model
+msgid "Apply on"
+msgstr "Прилага се върху"
+#. module: purchase_request_exception
+#: model_terms:ir.ui.view,arch_db:purchase_request_exception.view_purchase_request_search
+msgid "Blocked in Draft"
+msgstr "Блокирана в чернова"
+#. module: purchase_request_exception
+#: model_terms:ir.ui.view,arch_db:purchase_request_exception.view_purchase_request_form
+msgid ""
+"Click here to be able to confirm this Agreement regardless of the "
+"exceptions."
+msgstr "Кликнете тук, за да потвърдите въпреки изключенията."
+#. module: purchase_request_exception
+#: model:ir.model.fields,field_description:purchase_request_exception.field_purchase_request_exception_confirm__create_uid
+msgid "Created by"
+msgstr "Създадено от"
+#. module: purchase_request_exception
+#: model:ir.model.fields,field_description:purchase_request_exception.field_purchase_request_exception_confirm__create_date
+msgid "Created on"
+msgstr "Създадено на"
+#. module: purchase_request_exception
+#: model:ir.model.fields,field_description:purchase_request_exception.field_purchase_request_exception_confirm__display_name
+msgid "Display Name"
+msgstr "Показвано име"
+#. module: purchase_request_exception
+#: model:ir.model,name:purchase_request_exception.model_exception_rule
+msgid "Exception Rule"
+msgstr "Правило за изключение"
+#. module: purchase_request_exception
+#: model:ir.model.fields,field_description:purchase_request_exception.field_purchase_request__exception_ids
+msgid "Exceptions"
+msgstr "Изключения"
+#. module: purchase_request_exception
+#: model:ir.model.fields,field_description:purchase_request_exception.field_purchase_request__exceptions_summary
+msgid "Exceptions Summary"
+msgstr "Обобщение на изключенията"
+#. module: purchase_request_exception
+#: model:ir.model.fields,field_description:purchase_request_exception.field_purchase_request_exception_confirm__exception_ids
+msgid "Exceptions to resolve"
+msgstr "Изключения за разрешаване"
+#. module: purchase_request_exception
+#: model:ir.model.fields,field_description:purchase_request_exception.field_purchase_request_exception_confirm__id
+msgid "ID"
+msgstr "ID"
+#. module: purchase_request_exception
+#: model:ir.model.fields,field_description:purchase_request_exception.field_purchase_request__ignore_exception
+#: model:ir.model.fields,field_description:purchase_request_exception.field_purchase_request_exception_confirm__ignore
+#: model:ir.model.fields,field_description:purchase_request_exception.field_purchase_request_line__ignore_exception
+#: model_terms:ir.ui.view,arch_db:purchase_request_exception.view_purchase_request_form
+msgid "Ignore Exceptions"
+msgstr "Игнорирай изключенията"
+#. module: purchase_request_exception
+#: model:ir.model.fields,field_description:purchase_request_exception.field_purchase_request_exception_confirm____last_update
+msgid "Last Modified on"
+msgstr "Последна промяна на"
+#. module: purchase_request_exception
+#: model:ir.model.fields,field_description:purchase_request_exception.field_purchase_request_exception_confirm__write_uid
+msgid "Last Updated by"
+msgstr "Последно обновено от"
+#. module: purchase_request_exception
+#: model:ir.model.fields,field_description:purchase_request_exception.field_purchase_request_exception_confirm__write_date
+msgid "Last Updated on"
+msgstr "Последно обновено на"
+#. module: purchase_request_exception
+#: model:ir.model.fields,field_description:purchase_request_exception.field_purchase_request__main_exception_id
+msgid "Main Exception"
+msgstr "Основно изключение"
+#. module: purchase_request_exception
+#: model:exception.rule,name:purchase_request_exception.pr_excep_no_approver
+msgid "No approver"
+msgstr "Няма одобряващ"
+#. module: purchase_request_exception
+#: model:exception.rule,description:purchase_request_exception.pr_excep_no_approver
+msgid "No approver assigned for this request"
+msgstr "Няма зададен одобряващ за тази заявка"
+#. module: purchase_request_exception
+#: model:ir.actions.act_window,name:purchase_request_exception.action_purchase_request_exception_confirm
+msgid "Outstanding exceptions to manage"
+msgstr "Неразрешени изключения"
+#. module: purchase_request_exception
+#: model:ir.model,name:purchase_request_exception.model_purchase_request
+msgid "Purchase Request"
+msgstr "Заявка за покупка"
+#. module: purchase_request_exception
+#: model:ir.actions.act_window,name:purchase_request_exception.action_purchase_request_test_tree
+#: model:ir.ui.menu,name:purchase_request_exception.menu_purchase_request_test
+msgid "Purchase Request Exception Rules"
+msgstr "Правила за изключения на заявки за покупка"
+#. module: purchase_request_exception
+#: model:ir.model,name:purchase_request_exception.model_purchase_request_line
+msgid "Purchase Request Line"
+msgstr "Ред на заявка за покупка"
+#. module: purchase_request_exception
+#: model:ir.actions.server,name:purchase_request_exception.ir_cron_test_pr_request_except_ir_actions_server
+#: model:ir.cron,cron_name:purchase_request_exception.ir_cron_test_pr_request_except
+msgid "Purchase Request: Test Draft Purchase Requests Exception"
+msgstr "Заявка за покупка: проверка на изключения за чернови"
+#. module: purchase_request_exception
+#: model:ir.model.fields,field_description:purchase_request_exception.field_exception_rule__purchase_request_ids
+msgid "Purchase Requests"
+msgstr "Заявки за покупка"
+#. module: purchase_request_exception
+#: model:ir.model.fields,field_description:purchase_request_exception.field_purchase_request_exception_confirm__related_model_id
+#: model:ir.model.fields.selection,name:purchase_request_exception.selection__exception_rule__model__purchase_request
+msgid "Purchase request"
+msgstr "Заявка за покупка"
+#. module: purchase_request_exception
+#: model:ir.model,name:purchase_request_exception.model_purchase_request_exception_confirm
+msgid "Purchase request exception wizard"
+msgstr "Помощник за изключения на заявки"
+#. module: purchase_request_exception
+#: model:ir.model.fields.selection,name:purchase_request_exception.selection__exception_rule__model__purchase_request_line
+msgid "Purchase request line"
+msgstr "Ред на заявка за покупка"
+#. module: purchase_request_exception
+#: model:exception.rule,description:purchase_request_exception.prl_excep_qty_check
+msgid "Purchase request line quantity must be positive"
+msgstr "Количеството в реда на заявката трябва да е положително"
+#. module: purchase_request_exception
+#: model:exception.rule,name:purchase_request_exception.prl_excep_qty_check
+msgid "Quantity not positive"
+msgstr "Неположително количество"

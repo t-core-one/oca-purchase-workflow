@@ -1,0 +1,126 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_request_type
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20250909\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-18 09:13+0000\n"
+"PO-Revision-Date: 2026-07-18 09:13+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: purchase_request_type
+#: model:ir.model.fields,field_description:purchase_request_type.field_purchase_request_type__active
+msgid "Active"
+msgstr "Активен"
+#. module: purchase_request_type
+#: model_terms:ir.ui.view,arch_db:purchase_request_type.view_purchase_request_type_form
+#: model_terms:ir.ui.view,arch_db:purchase_request_type.view_purchase_request_type_search
+msgid "Archived"
+msgstr "Архивиран"
+#. module: purchase_request_type
+#: model_terms:ir.actions.act_window,help:purchase_request_type.action_purchase_request_type_view
+msgid "Click to set a new type for purchase request."
+msgstr "Създайте нов тип заявка за покупка."
+#. module: purchase_request_type
+#: model:ir.model.fields,field_description:purchase_request_type.field_purchase_request_type__company_id
+#: model_terms:ir.ui.view,arch_db:purchase_request_type.view_purchase_request_type_search
+msgid "Company"
+msgstr "Компания"
+#. module: purchase_request_type
+#: model:ir.model.fields,field_description:purchase_request_type.field_purchase_request_type__create_uid
+msgid "Created by"
+msgstr "Създадено от"
+#. module: purchase_request_type
+#: model:ir.model.fields,field_description:purchase_request_type.field_purchase_request_type__create_date
+msgid "Created on"
+msgstr "Създадено на"
+#. module: purchase_request_type
+#: model:ir.model.fields,field_description:purchase_request_type.field_purchase_request_type__description
+msgid "Description"
+msgstr "Описание"
+#. module: purchase_request_type
+#: model:ir.model.fields,field_description:purchase_request_type.field_purchase_request_type__display_name
+msgid "Display Name"
+msgstr "Показвано име"
+#. module: purchase_request_type
+#. odoo-python
+#: code:addons/purchase_request_type/models/purchase_request.py:0
+#, python-format
+msgid "Document's company and type's company mismatch"
+msgstr "Компанията на документа не съвпада с тази на типа"
+#. module: purchase_request_type
+#: model:ir.model.fields,field_description:purchase_request_type.field_purchase_request_type__sequence_id
+#: model_terms:ir.ui.view,arch_db:purchase_request_type.view_purchase_request_type_search
+msgid "Entry Sequence"
+msgstr "Последователност"
+#. module: purchase_request_type
+#: model_terms:ir.ui.view,arch_db:purchase_request_type.view_purchase_request_type_search
+msgid "Group By"
+msgstr "Групиране по"
+#. module: purchase_request_type
+#: model:ir.model.fields,field_description:purchase_request_type.field_purchase_request_type__id
+msgid "ID"
+msgstr "ID"
+#. module: purchase_request_type
+#: model:ir.model.fields,field_description:purchase_request_type.field_purchase_request_type____last_update
+msgid "Last Modified on"
+msgstr "Последна промяна на"
+#. module: purchase_request_type
+#: model:ir.model.fields,field_description:purchase_request_type.field_purchase_request_type__write_uid
+msgid "Last Updated by"
+msgstr "Последно обновено от"
+#. module: purchase_request_type
+#: model:ir.model.fields,field_description:purchase_request_type.field_purchase_request_type__write_date
+msgid "Last Updated on"
+msgstr "Последно обновено на"
+#. module: purchase_request_type
+#: model:ir.model.fields,field_description:purchase_request_type.field_purchase_request_type__name
+msgid "Name"
+msgstr "Име"
+#. module: purchase_request_type
+#: model:ir.model.fields,field_description:purchase_request_type.field_purchase_request_type__picking_type_id
+#: model_terms:ir.ui.view,arch_db:purchase_request_type.view_purchase_request_type_search
+msgid "Picking Type"
+msgstr "Тип операция"
+#. module: purchase_request_type
+#: model:ir.model,name:purchase_request_type.model_purchase_request
+msgid "Purchase Request"
+msgstr "Заявка за покупка"
+#. module: purchase_request_type
+#: model:ir.actions.act_window,name:purchase_request_type.action_purchase_request_type_view
+#: model:ir.ui.menu,name:purchase_request_type.menu_purchase_request_type
+#: model_terms:ir.ui.view,arch_db:purchase_request_type.view_purchase_request_type_search
+msgid "Purchase Request Types"
+msgstr "Типове заявки за покупка"
+#. module: purchase_request_type
+#: model:ir.model.fields,field_description:purchase_request_type.field_purchase_request__reduce_step
+#: model:ir.model.fields,field_description:purchase_request_type.field_purchase_request_type__reduce_step
+msgid "Reduce Step"
+msgstr "Намали стъпката"
+#. module: purchase_request_type
+#: model:ir.model.fields,field_description:purchase_request_type.field_purchase_request__name
+msgid "Request Reference"
+msgstr "Референция на заявката"
+#. module: purchase_request_type
+#: model:ir.model.fields,field_description:purchase_request_type.field_purchase_request__request_type
+msgid "Request Type"
+msgstr "Тип заявка"
+#. module: purchase_request_type
+#: model:ir.model.fields,field_description:purchase_request_type.field_purchase_request_type__sequence
+msgid "Sequence"
+msgstr "Последователност"
+#. module: purchase_request_type
+#: model_terms:ir.ui.view,arch_db:purchase_request_type.view_purchase_request_type_form
+msgid "Type"
+msgstr "Тип"
+#. module: purchase_request_type
+#: model:ir.model,name:purchase_request_type.model_purchase_request_type
+msgid "Type of purchase request"
+msgstr "Тип на заявката за покупка"
