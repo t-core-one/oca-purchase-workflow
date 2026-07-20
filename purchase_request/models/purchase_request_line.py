@@ -361,14 +361,8 @@ class PurchaseRequestLine(models.Model):
 
         rl_qty = 0.0
         # Recompute quantity by adding existing running procurements.
-        if new_pr_line:
-            rl_qty = po_line.product_uom_qty
-        else:
-            for prl in po_line.purchase_request_lines:
-                for alloc in prl.purchase_request_allocation_ids:
-                    rl_qty += alloc.product_uom_id._compute_quantity(
-                        alloc.requested_product_uom_qty, purchase_uom
-                    )
+        for rl in po_line.purchase_request_lines:
+            rl_qty += rl.product_uom_id._compute_quantity(rl.product_qty, purchase_uom)
         qty = max(rl_qty, supplierinfo_min_qty)
         return qty
 
@@ -407,3 +401,27 @@ class PurchaseRequestLine(models.Model):
                 self.env.context,
             ),
         }
+
+    @api.model
+    def _get_analytic_name(self):
+        return (
+            [
+                "%(name)s (%(value)s)"
+                % {
+                    "name": self.env["account.analytic.account"]
+                    .browse(int(key))
+                    .display_name,
+                    "value": value,
+                }
+                for key, value in self.analytic_distribution.items()
+            ]
+            if self.analytic_distribution
+            else [""]
+        )
+
+    @api.model
+    def _get_analytic_distribution(self):
+        self.ensure_one()
+
+        name = ", ".join(filter(None, self._get_analytic_name()))
+        return name
